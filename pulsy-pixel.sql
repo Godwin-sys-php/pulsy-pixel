@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le : ven. 05 jan. 2024 à 12:58
+-- Généré le : ven. 05 jan. 2024 à 13:00
 -- Version du serveur : 5.7.34
 -- Version de PHP : 7.4.21
 
@@ -114,12 +114,12 @@ CREATE TABLE `Regions` (
 --
 
 INSERT INTO `Regions` (`region_id`, `name`, `currency`, `color`, `flag`) VALUES
-(1, 'France', '€', 'indigo', 'http://localhost:3000/src/assets/france.png'),
-(2, 'Belgique', '€', 'yellow', 'http://localhost:3000/src/assets/belgium.png'),
-(3, 'USA', '$', 'blue', 'http://localhost:3000/src/assets/united-states.png'),
-(4, 'Suisse', 'CHF', 'red', 'http://localhost:3000/src/assets/switzerland.png'),
-(5, 'Canada', 'CAD', 'pink', 'http://localhost:3000/src/assets/canada.png'),
-(6, 'SA', 'ZAR', 'green', 'http://localhost:3000/src/assets/south-africa.png');
+(1, 'France', '€', 'indigo', '/assets/france.png'),
+(2, 'Belgique', '€', 'yellow', '/assets/belgium.png'),
+(3, 'USA', '$', 'blue', '/assets/united-states.png'),
+(4, 'Suisse', 'CHF', 'red', '/assets/switzerland.png'),
+(5, 'Canada', 'CAD', 'pink', '/assets/canada.png'),
+(6, 'SA', 'ZAR', 'green', '/assets/south-africa.png');
 
 --
 -- Index pour les tables déchargées
