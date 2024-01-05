@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le : ven. 05 jan. 2024 à 13:00
+-- Généré le : ven. 05 jan. 2024 à 13:17
 -- Version du serveur : 5.7.34
 -- Version de PHP : 7.4.21
 
@@ -38,7 +38,7 @@ CREATE TABLE `Products` (
 --
 
 INSERT INTO `Products` (`product_id`, `name`, `image`) VALUES
-(1, 'PSN', 'http://localhost:3000/src/Logos/PSN.png');
+(1, 'PSN', '/images/logos/PSN.png');
 
 -- --------------------------------------------------------
 
@@ -114,12 +114,12 @@ CREATE TABLE `Regions` (
 --
 
 INSERT INTO `Regions` (`region_id`, `name`, `currency`, `color`, `flag`) VALUES
-(1, 'France', '€', 'indigo', '/assets/france.png'),
-(2, 'Belgique', '€', 'yellow', '/assets/belgium.png'),
-(3, 'USA', '$', 'blue', '/assets/united-states.png'),
-(4, 'Suisse', 'CHF', 'red', '/assets/switzerland.png'),
-(5, 'Canada', 'CAD', 'pink', '/assets/canada.png'),
-(6, 'SA', 'ZAR', 'green', '/assets/south-africa.png');
+(1, 'France', '€', 'indigo', '/images/flags/france.png'),
+(2, 'Belgique', '€', 'yellow', '/images/flags/belgium.png'),
+(3, 'USA', '$', 'blue', '/images/flags/united-states.png'),
+(4, 'Suisse', 'CHF', 'red', '/images/flags/switzerland.png'),
+(5, 'Canada', 'CAD', 'pink', '/images/flags/canada.png'),
+(6, 'SA', 'ZAR', 'green', '/images/flags/south-africa.png');
 
 --
 -- Index pour les tables déchargées

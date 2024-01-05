@@ -33,6 +33,7 @@ app.use((req, res, next) => {
     next();
   }
 });
+app.use('/Images', express.static(path.join(__dirname, 'Images')));
 app.use(express.static(__dirname + '/dist'));
 app.use("/api/products", productsRouter);
 
