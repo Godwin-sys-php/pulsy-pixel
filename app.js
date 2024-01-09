@@ -4,6 +4,7 @@ const xss = require('xss');
 const _ = require('lodash');
 const path = require('path');
 const productsRouter = require("./Routes/Products");
+const ordersRouter = require("./Routes/Orders");
 
 const app = express();
 
@@ -33,9 +34,10 @@ app.use((req, res, next) => {
     next();
   }
 });
-app.use('/Images', express.static(path.join(__dirname, 'Images')));
+
 app.use(express.static(__dirname + '/dist'));
 app.use("/api/products", productsRouter);
+app.use("/api/orders", ordersRouter);
 
 app.get('*', (req, res) => {
   res.sendFile(__dirname + '/dist/index.html');
