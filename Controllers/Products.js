@@ -44,7 +44,9 @@ exports.getAll = async (req, res) => {
       });
     });
 
-    return res.status(200).json({success: true, data: response});
+    const others = await Products.customQuery("SELECT * FROM PhysicalProduct");
+
+    return res.status(200).json({success: true, data: response, others: others, });
   } catch (error) {
     console.log(error);
     return res.status(500).json({ error: true, message: "Une erreur inconnue a eu lieu" });
